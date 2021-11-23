@@ -1,0 +1,71 @@
+:root {
+    --text: red;
+}
+button {
+    color: var(--text);
+}
+html {
+    font-size: 100%;
+}
+/* .box {
+    /* width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0,rbga(255,255,0,0,5),rbga(0,0,255,0,5)),
+    url (https://www.pinterest.com/pin/682084306066390518/); 
+} */
+.box {
+    width: 100%;
+    height: 100vh;
+    background : url(https://i.pinimg.com/564x/18/9b/0b/189b0b8629b0f1a0023b98b3bbeb0a0f.jpg) no-repeat center / contain;
+    /* background-image: url(https://i.pinimg.com/564x/18/9b/0b/189b0b8629b0f1a0023b98b3bbeb0a0f.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+    /* border: 20px dashed white;
+    padding: 20px;
+    box-sizing: border-box;
+    background-origin: padding-box; */
+}
+h1 {
+    font-size: 3rem;
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+/* .box {
+    position: relative;
+    top: 200px;
+} */
+.box::after{
+    content: attr(data-title);
+}
+h1:hover {
+    color: red;
+}
+h1:active {
+    color: green;
+}
+li:first-child {
+    color: green;
+}
+/* h1::first-letter{
+    font-size: 100px;
+} */
+h1::selection {
+    color: salmon;
+    background-color: seagreen;
+}
+.box1 {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    position: fixed;
+}
+.box1-child {
+    width: 50px;
+    height: 50px;
+    background-color: blanchedalmond;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
